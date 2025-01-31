@@ -1,0 +1,328 @@
+:root
+{
+	--orange:#CD5C08;
+	--white:#FFF5E4;
+	--lightblue:#C1D8C3;
+	--blue:#6A9C89;
+	--red:crimson;
+	--ocean:#1A3636;
+
+}
+body,h2
+{
+	margin: 0;
+	font-family:  Arial, Times New Roman,Helvetica;
+}
+
+.landing
+{
+	background-image: url("assets/bg.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	color: var(--white);
+}
+
+header a
+{
+  text-decoration: none;
+  color: var(--orange);
+}
+
+header
+{
+	display: flex;
+	flex-wrap: wrap;
+	row-gap:2px; 
+	background-color: black;
+}
+
+#logo
+{
+	flex: 3;
+	font-size: 3em;
+}
+nav
+{
+	flex: 2;
+	display: flex;
+	padding: 15px;
+
+
+}
+nav a
+{
+	flex:2;
+	justify-content: center;
+
+}
+
+nav a:hover
+{
+	color: var(--blue);
+}
+
+.maintext
+{
+	display: flex;
+	flex-direction: column;
+	height: 50vh;
+	padding: 2em;
+	justify-content: center;
+}
+
+.tagline1
+{
+	color: var(--red);
+	font-size: 2.5em;
+	font-weight: bolder;
+}
+
+.tagline2
+{
+	color: var(--orange);
+}
+
+.maintext div
+{
+	margin-top: .75em;
+}
+
+.maintext button
+{
+	width: 20vw;
+	margin-top: 2em;
+	border-radius: 10px;
+	padding: .7em;
+	background-color: var(--lightblue);
+	color: var(--orange);
+	border:1px solid var(--lightblue);
+}
+.menu
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+	background:var(--lightblue);
+	color: var(--ocean);
+}
+
+#menu-heading,#branches
+{
+	font-size: 2.5em;
+	color: var(--red);
+	background-color: var(--lightblue);
+	display: flex;
+	justify-content: center;
+}
+
+.menu th
+{
+	color: var(--orange);
+	font-size: 1.8em;
+}
+
+table
+{
+	width: 100%;
+	padding: 1em;
+}
+
+.menu tr
+{
+	display: flex;
+	justify-content: center;
+	margin-top: .8em;
+}
+
+.menu td:nth-child(1)
+{
+	flex:1;
+	justify-content: left;
+}
+
+.menu td:nth-child(2)
+{
+
+	justify-content: right;
+}
+
+.locations
+{
+	display: flex;
+	background:var(--lightblue);
+		color:var(--ocean);
+		flex-wrap: wrap;
+}
+
+.locations h2
+{
+	color: var(--orange);
+	margin-bottom: .8em;
+}
+
+.locations div
+{
+	flex:1;
+	padding: 1em;
+	min-width: 220px;
+}
+
+footer
+{
+	background-color: gray;
+	color: var(--white);
+	padding: .25em 1em; 
+	font-size: 1.25em;
+	width: auto;
+}
+#footer
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 1.5em;
+
+}
+
+#social-media
+{
+	display: flex;
+	flex-direction: row;
+	cursor: pointer;
+	
+}
+
+#footer p
+{
+	justify-content: right;
+	align-items: right;
+	color: var(--orange);
+	margin:0;
+
+}
+#orderbtn
+{
+	text-decoration: none;
+}
+
+
+/* Food Card Styles */
+
+#foodpage h2
+{
+	background:var(--lightblue);
+	color: var(--red);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	font-size: 2em;
+	padding: 20px;
+
+}
+
+
+.food-card {
+  display: inline-block;
+  margin: 20px;
+  width: 250px;
+  height: 350px;
+  min-width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+}
+
+.food-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.food-card h3 {
+	color: var(--orange);
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.food-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+
+ 
+
+}
+
+.food-card .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #337ab7;
+
+}
+
+.food-card button {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 45%;
+}
+
+.food-card button:hover {
+  background-color: #23527c;
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+  .food-card {
+    width: 200px;
+    height: 250px;
+  }
+  .food-card img {
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .food-card {
+    width: 150px;
+    height: 200px;
+  }
+  .food-card img {
+    height: 80px;
+  }
+}
+
+.starters1
+{
+
+	display: flex;
+	overflow-x:scroll;
+}
+
+#maincourse1
+{
+
+	display: flex;
+	overflow-x:scroll;
+}
+.chats
+{
+
+	display: flex;
+	overflow-x:scroll;
+}
+.juice
+{
+
+	display: flex;
+	overflow-x:scroll;
+}
